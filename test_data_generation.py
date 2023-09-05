@@ -24,7 +24,8 @@ for i in range(m):
 
     for j in range(1, 11):
         for k in range(13, 28, 2):
-            blr_name = os.path.join(image_blur_dir, f"{im_name}_ker{j:02d}_blur_k{k}.png")
+            blr_name = os.path.join(
+                image_blur_dir, f"{im_name}_ker{j:02d}_blur_k{k}.png")
             B = cv2.imread(blr_name)
 
             gt_filename = os.path.join('./Testh_gt', f"{count:06d}.png")
